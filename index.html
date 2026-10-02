@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesus Receipts — We Got Receipts</title>
+<meta name="description" content="The historical case for Jesus — itemized. Six exhibits, sixty seconds each, every claim sourced.">
+<meta property="og:title" content="Jesus Receipts — We Got Receipts">
+<meta property="og:description" content="The historical case for Jesus — itemized. Six exhibits. Every claim sourced.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B0A08">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230B0A08'/%3E%3Crect x='10' y='14' width='4' height='36' fill='%23F2A93B'/%3E%3Crect x='17' y='14' width='2' height='36' fill='%23F2A93B'/%3E%3Crect x='23' y='14' width='7' height='36' fill='%23F2A93B'/%3E%3Crect x='33' y='14' width='3' height='36' fill='%23F2A93B'/%3E%3Crect x='39' y='14' width='2' height='36' fill='%23F2A93B'/%3E%3Crect x='44' y='14' width='6' height='36' fill='%23F2A93B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   JESUS RECEIPTS — near-black + candlelight gold brand build
+   ============================================================ */
+:root{
+  --ink:#0B0A08;
+  --ink2:#13110B;
+  --card:#16140E;
+  --line:#2B2516;
+  --gold:#F2A93B;
+  --gold-deep:#C98522;
+  --gold-soft:rgba(242,169,59,.12);
+  --cream:#F5F2EA;
+  --paper:#F7F4EA;
+  --paper-dim:#EDE8D8;
+  --paper-ink:#191712;
+  --paper-mute:#6E6A5C;
+  --red:#E03E2D;
+  --red-dark:#B32B1F;
+  --mute:#A8A296;
+  --body:#E7E2D3;
+  --mono:'Space Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --disp:'Anton','Arial Narrow',Impact,sans-serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{
+  background:var(--ink); color:var(--body);
+  font-family:var(--sans); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:.55;
+  background-image:radial-gradient(rgba(242,169,59,.055) 1px, transparent 1.6px);
+  background-size:26px 26px;
+}
+img{max-width:100%;display:block}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+::selection{background:var(--gold);color:var(--ink)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.mono{font-family:var(--mono)}
+.display{font-family:var(--disp);letter-spacing:.01em;text-transform:uppercase;line-height:.95;font-weight:400}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:var(--ink);padding:10px 16px;font-weight:800;z-index:200}
+.skip:focus{left:8px;top:8px;text-decoration:none}
+
+/* ---------- section heads ---------- */
+section{position:relative;z-index:1;padding:88px 0}
+.sec-head{max-width:820px;margin-bottom:52px}
+.sec-kicker{
+  font-family:var(--mono);font-size:12px;letter-spacing:.28em;color:var(--gold);
+  margin-bottom:14px;text-transform:uppercase;
+  display:flex;align-items:center;gap:12px;
+}
+.sec-kicker::after{content:"";height:1px;width:64px;background:var(--gold);opacity:.5}
+.sec-title{font-size:clamp(42px,6vw,72px);color:var(--cream);margin-bottom:16px}
+.sec-sub{font-size:17px;color:var(--mute);max-width:640px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head.center .sec-sub{margin:0 auto}
+.sec-head.center .sec-kicker{justify-content:center}
+.sec-head.center .sec-kicker::before{content:"";height:1px;width:64px;background:var(--gold);opacity:.5}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--sans);font-weight:800;font-size:15px;letter-spacing:.04em;text-transform:uppercase;
+  padding:15px 28px;border:2px solid var(--gold);cursor:pointer;
+  transition:transform .15s ease,background .15s ease,color .15s ease,border-color .15s ease;
+  text-decoration:none!important;border-radius:2px;white-space:nowrap;
+}
+.btn.gold{background:var(--gold);color:var(--ink)}
+.btn.gold:hover{background:var(--gold-deep);border-color:var(--gold-deep);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--cream);border-color:#4A4331}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+.btn.red:hover{background:var(--red-dark);transform:translateY(-2px)}
+.btn.ink{background:var(--ink);border-color:var(--ink);color:var(--cream)}
+.btn.ink:hover{background:#221D11;transform:translateY(-2px)}
+.btn:disabled{opacity:.55;cursor:wait;transform:none!important}
+.btn.small{padding:10px 18px;font-size:13px}
+
+/* ---------- barcode + stamp ---------- */
+.barcode{
+  display:inline-block;height:30px;width:86px;
+  background:repeating-linear-gradient(90deg,
+    currentColor 0 2px,transparent 2px 4px,
+    currentColor 4px 7px,transparent 7px 8px,
+    currentColor 8px 9px,transparent 9px 13px,
+    currentColor 13px 16px,transparent 16px 18px,
+    currentColor 18px 19px,transparent 19px 22px,
+    currentColor 22px 25px,transparent 25px 27px);
+}
+.stamp{
+  display:inline-block;font-family:var(--mono);font-weight:700;font-size:14px;letter-spacing:.14em;
+  color:var(--red);border:3px solid var(--red);padding:6px 14px;border-radius:4px;
+  transform:rotate(-3deg);text-transform:uppercase;background:rgba(224,62,45,.06);
+  box-shadow:0 0 0 1px rgba(224,62,45,.25) inset;
+}
+.stamp.gold{color:var(--gold-deep);border-color:var(--gold-deep);background:rgba(242,169,59,.08);box-shadow:0 0 0 1px rgba(242,169,59,.25) inset}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:100;background:rgba(11,10,8,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:2px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--cream)}
+.brand:hover{text-decoration:none}
+.brand-name{font-family:var(--disp);font-size:26px;letter-spacing:.05em}
+.brand-name em{font-style:normal;color:var(--gold)}
+.brand .barcode{color:var(--gold);height:26px;width:64px}
+.nav-links{display:flex;align-items:center;gap:26px}
+.nav-links a{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase}
+.nav-links a:hover{color:var(--gold);text-decoration:none}
+.nav-links .btn{font-family:var(--sans)}
+.nav-toggle{display:none;background:none;border:2px solid var(--line);border-radius:2px;padding:10px;cursor:pointer}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--cream);margin:5px 0;transition:.2s}
+
+/* ---------- hero ---------- */
+header.hero{padding:88px 0 72px;position:relative;overflow:hidden;z-index:1}
+header.hero::after{
+  content:"";position:absolute;top:-220px;right:-160px;width:560px;height:560px;pointer-events:none;
+  background:radial-gradient(circle,rgba(242,169,59,.14) 0%,transparent 62%);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start}
+.eyebrow{
+  font-family:var(--mono);font-size:12px;letter-spacing:.3em;color:var(--gold);
+  margin-bottom:20px;text-transform:uppercase;
+}
+.hero h1{font-size:clamp(58px,9.5vw,132px);color:var(--cream);margin-bottom:22px}
+.hero h1 .gold{color:var(--gold)}
+.hero-promise{font-size:clamp(20px,2.6vw,27px);font-weight:600;color:var(--cream);margin-bottom:12px}
+.hero-sub{font-size:16.5px;color:var(--mute);max-width:520px;margin-bottom:32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.hero-stats{display:flex;gap:30px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--mute)}
+.hero-stats b{display:block;font-family:var(--disp);font-size:30px;color:var(--cream);letter-spacing:.02em;font-weight:400}
+.hero-stats b em{font-style:normal;color:var(--gold)}
+
+/* featured video card (hero) */
+.vfeature{position:relative}
+.vfeature-tag{
+  display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;
+  background:var(--gold);color:var(--ink);font-weight:700;padding:8px 14px;border-radius:2px 2px 0 0;
+  text-transform:uppercase;
+}
+.vframe{position:relative;aspect-ratio:9/15.4;border:2px solid var(--line);border-top:none;background:#000;max-height:560px;overflow:hidden}
+.vframe video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#000}
+.voverlay{
+  position:absolute;inset:0;border:0;cursor:pointer;width:100%;
+  background:linear-gradient(180deg,rgba(11,10,8,.05) 30%,rgba(11,10,8,.72) 100%);
+  display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;
+  transition:opacity .25s ease;
+}
+.vframe.playing .voverlay{opacity:0;pointer-events:none}
+.playbtn{
+  width:78px;height:78px;border-radius:50%;background:var(--gold);color:var(--ink);
+  display:flex;align-items:center;justify-content:center;flex:none;
+  box-shadow:0 8px 32px rgba(242,169,59,.35);transition:transform .15s ease;
+}
+.voverlay:hover .playbtn{transform:scale(1.07)}
+.playbtn svg{width:28px;height:28px;margin-left:3px}
+.vtab{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--cream);
+  text-transform:uppercase;background:rgba(11,10,8,.65);padding:8px 14px;border-radius:2px;
+  border:1px solid var(--line);
+}
+
+/* ---------- printer strip ---------- */
+.printer-strip{margin-top:60px}
+.printer-label{font-family:var(--mono);font-size:11.5px;letter-spacing:.26em;color:var(--mute);text-transform:uppercase;margin-bottom:16px}
+.printer-label em{font-style:normal;color:var(--gold)}
+.printer{background:var(--ink2);border:2px solid var(--line);border-radius:3px;padding:0;overflow:hidden}
+.printer-slot{height:16px;background:#050403;border-bottom:2px solid var(--line);position:relative}
+.printer-slot::after{content:"";position:absolute;inset:5px 28px 5px 28px;background:linear-gradient(180deg,#2B2516,#17140B);border-radius:2px}
+.printer-body{padding:26px 26px 34px;display:flex;justify-content:center}
+
+/* ---------- receipts (paper cards) ---------- */
+.receipt{
+  background:var(--paper);color:var(--paper-ink);
+  font-family:var(--mono);font-size:13.5px;line-height:1.75;
+  padding:28px 26px 26px;width:100%;max-width:430px;position:relative;
+  box-shadow:0 18px 44px rgba(0,0,0,.45);
+}
+.receipt.wide{max-width:640px}
+.r-center{text-align:center}
+.r-line{border-top:2px dashed var(--paper-line);margin:14px 0}
+.r-gold{color:#8A5A00;font-weight:700}
+.r-foot{font-size:11.5px;letter-spacing:.14em;color:var(--paper-mute)}
+.receipt .rc-lines>div{white-space:pre-wrap;word-break:break-word}
+.receipt .rc-total{opacity:0;transition:opacity .6s ease}
+.rc-cursor{display:inline-block;width:9px;height:16px;background:var(--paper-ink);vertical-align:-2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.receipt .stamp-row{margin-top:12px;display:flex;justify-content:center}
+
+/* ---------- ticker ---------- */
+.ticker{background:#080705;border-top:2px solid var(--line);border-bottom:2px solid var(--line);overflow:hidden;padding:14px 0;position:relative;z-index:1}
+.ticker-track{display:flex;width:max-content;animation:tick 46s linear infinite;font-family:var(--mono);font-size:13px;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;white-space:nowrap}
+.ticker-track .titem{padding:0 22px;display:flex;align-items:center;gap:44px}
+.ticker-track .rdot{color:var(--red);font-size:10px}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- honesty banner ---------- */
+.honesty-banner{
+  border:2px solid var(--gold);border-radius:2px;background:var(--gold-soft);
+  padding:18px 22px;margin-bottom:56px;display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;
+}
+.honesty-banner .stamp{flex:none;margin-top:2px}
+.honesty-banner p{font-size:15.5px;color:var(--body);flex:1;min-width:240px}
+.honesty-banner p em{color:var(--cream);font-weight:600}
+.honesty-banner a{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;margin-top:2px}
+
+/* ---------- exhibits ---------- */
+#evidence{background:linear-gradient(180deg,var(--ink),#0E0C08)}
+.exhibit{
+  display:grid;grid-template-columns:290px 1fr;gap:40px;
+  background:var(--card);border:2px solid var(--line);border-radius:3px;
+  padding:36px;margin-bottom:40px;position:relative;overflow:hidden;
+}
+.exhibit:nth-child(even of .exhibit){direction:rtl}
+.exhibit:nth-child(even of .exhibit) .x-body,
+.exhibit:nth-child(even of .exhibit) .x-media{direction:ltr}
+.x-media{position:relative}
+.x-media .vframe{border:2px solid var(--line);aspect-ratio:9/16;max-height:none;border-top:2px solid var(--line)}
+.x-body{min-width:0}
+.x-no{font-family:var(--mono);font-size:12px;letter-spacing:.24em;color:var(--gold);text-transform:uppercase;margin:16px 0 8px}
+.x-body h3{font-size:clamp(34px,4vw,52px);color:var(--cream);margin-bottom:14px}
+.x-claim{font-size:16.5px;color:var(--body);max-width:560px;margin-bottom:24px}
+.x-claim strong{color:var(--gold);font-weight:700}
+.file-toggle{
+  background:transparent;border:2px solid #4A4331;color:var(--cream);border-radius:2px;
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;
+  padding:13px 20px;cursor:pointer;display:inline-flex;align-items:center;gap:10px;
+  transition:border-color .15s,color .15s;
+}
+.file-toggle:hover{border-color:var(--gold);color:var(--gold)}
+.file-toggle .caret{display:inline-block;transition:transform .3s ease;color:var(--gold)}
+.exhibit.open .file-toggle .caret{transform:rotate(90deg)}
+.exhibit.open .file-toggle{border-color:var(--gold)}
+.filewrap{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s cubic-bezier(.4,0,.2,1);grid-column:1/-1}
+.filewrap>div{overflow:hidden;min-height:0}
+.exhibit.open .filewrap{grid-template-rows:1fr}
+.filewrap-inner{padding-top:30px;display:flex;justify-content:center}
+.file{max-width:680px;font-size:13px}
+.file .file-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.file .file-head .fex{font-weight:700;letter-spacing:.08em}
+.file .fgrade{
+  font-weight:700;font-size:12px;letter-spacing:.1em;color:var(--gold-deep);
+  border:2px solid var(--gold-deep);padding:4px 12px;border-radius:3px;background:rgba(242,169,59,.07);
+  white-space:nowrap;
+}
+.fitem{display:grid;grid-template-columns:30px 1fr;gap:12px;padding:13px 0;border-bottom:1px dashed var(--paper-line)}
+.fitem:last-of-type{border-bottom:0}
+.fitem .n{font-weight:700;color:var(--gold-deep)}
+.fitem .t{font-weight:700;letter-spacing:.04em;font-size:13px;margin-bottom:3px}
+.fitem .d{color:#3D3A30;font-size:13px;line-height:1.68}
+.fitem .d em{color:#191712}
+.fquote{margin:18px 0 6px;padding:16px 18px;border-left:4px solid var(--gold-deep);background:var(--paper-dim);font-size:13px;line-height:1.7}
+.fquote .who{display:block;margin-top:8px;font-size:11.5px;letter-spacing:.12em;color:var(--paper-mute);font-weight:700}
+.fno{margin-top:16px;font-size:12.5px;line-height:1.7;color:#3D3A30}
+.fno strong{color:var(--paper-ink)}
+
+/* ---------- honesty rule section ---------- */
+#honesty{background:#0E0C08;border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
+.honesty-card{max-width:880px;margin:0 auto;padding:48px 44px 42px;text-align:center}
+.honesty-card .stamp{margin-bottom:26px;transform:rotate(-2deg)}
+.honesty-line{
+  font-family:var(--disp);font-size:clamp(30px,4.6vw,52px);line-height:1.08;
+  text-transform:uppercase;color:var(--paper-ink);margin-bottom:8px;
+}
+.honesty-line em{font-style:normal;color:var(--red)}
+.honesty-attrs{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:26px;text-align:left}
+.honesty-attrs h4{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:10px;color:var(--paper-ink)}
+.honesty-attrs .yes h4{color:#0F7A3D}
+.honesty-attrs .no h4{color:var(--red)}
+.honesty-attrs p{font-size:13.5px;line-height:1.75;color:#3D3A30}
+.honesty-sign{margin-top:30px;font-family:var(--mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--paper-mute)}
+.honesty-sign b{color:var(--gold-deep)}
+
+/* ---------- print section ---------- */
+.print-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.print-copy .sec-kicker{margin-bottom:12px}
+.print-copy .btn{margin-top:28px}
+.big-receipt{max-width:480px;margin:0 auto}
+.big-receipt .rc-total strong{font-size:15px;letter-spacing:.06em;color:#8A5A00}
+
+/* ---------- drop (merch) ---------- */
+#drop{background:linear-gradient(180deg,#0E0C08,var(--ink));border-top:2px solid var(--line)}
+.drop-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-bottom:44px}
+.product{
+  background:var(--card);border:2px solid var(--line);border-radius:3px;overflow:hidden;position:relative;
+  display:flex;flex-direction:column;
+}
+.p-imgs{position:relative;aspect-ratio:1/1;background:#050403;overflow:hidden}
+.p-imgs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease}
+.p-imgs img.on{opacity:1}
+.p-view{
+  position:absolute;bottom:12px;right:12px;display:flex;gap:8px;z-index:2;
+}
+.p-view button{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  background:rgba(11,10,8,.82);color:var(--mute);border:1px solid var(--line);
+  padding:8px 12px;cursor:pointer;border-radius:2px;backdrop-filter:blur(6px);
+}
+.p-view button.on{color:var(--ink);background:var(--gold);border-color:var(--gold);font-weight:700}
+.p-chip{
+  position:absolute;top:14px;left:14px;z-index:2;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;
+  text-transform:uppercase;background:rgba(11,10,8,.85);color:var(--gold);border:1px solid var(--gold-deep);
+  padding:7px 12px;border-radius:2px;backdrop-filter:blur(6px);
+}
+.p-body{padding:26px 26px 28px;display:flex;flex-direction:column;gap:14px;flex:1}
+.p-body h3{font-family:var(--disp);font-size:30px;color:var(--cream);letter-spacing:.02em;text-transform:uppercase;font-weight:400}
+.p-body h3 em{font-style:normal;color:var(--gold)}
+.p-spec{font-family:var(--mono);font-size:12.8px;line-height:1.75;color:var(--mute)}
+.p-spec li{list-style:none;padding:5px 0 5px 20px;position:relative}
+.p-spec li::before{content:"—";position:absolute;left:2px;color:var(--gold-deep)}
+.p-form{margin-top:auto;padding-top:16px;border-top:1px dashed var(--line)}
+.p-form .flabel{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
+.nform{display:flex;gap:10px}
+.nform input[type=email]{
+  flex:1;min-width:0;background:var(--ink2);border:2px solid var(--line);color:var(--cream);
+  font-family:var(--mono);font-size:13.5px;padding:13px 14px;border-radius:2px;
+}
+.nform input[type=email]::placeholder{color:#5C5544}
+.nform input[type=email]:focus{border-color:var(--gold);outline:none}
+.filed{background:var(--paper);color:var(--paper-ink);font-family:var(--mono);font-size:12.5px;padding:16px 18px;border-radius:2px;line-height:1.7}
+.filed .fstatus{color:#0F7A3D;font-weight:700;letter-spacing:.1em}
+.filed .femail{color:var(--gold-deep);font-weight:700;word-break:break-all}
+.filed .stamp{font-size:11px;padding:4px 10px;margin-top:8px}
+.drop-note{text-align:center;font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--mute);text-transform:uppercase}
+.drop-note a{font-weight:700}
+
+/* ---------- mission ---------- */
+#mission{background:#0E0C08;border-top:2px solid var(--line)}
+.mission-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.mission-grid p{color:var(--body);font-size:16.5px;margin-bottom:18px;max-width:520px}
+.mission-grid p strong{color:var(--cream)}
+.give-card{
+  background:var(--gold);color:var(--ink);border-radius:3px;padding:56px 48px;text-align:center;
+  box-shadow:0 24px 70px rgba(242,169,59,.14);position:relative;overflow:hidden;
+}
+.give-card::before{
+  content:"";position:absolute;inset:12px;border:2px dashed rgba(11,10,8,.3);border-radius:2px;pointer-events:none;
+}
+.give-card .big{font-size:clamp(80px,10vw,130px);line-height:1;margin-bottom:14px}
+.give-card p{font-family:var(--mono);font-size:13px;letter-spacing:.1em;line-height:2;color:var(--ink);margin:0;text-transform:uppercase}
+
+/* ---------- email section ---------- */
+.email-sec{padding:96px 0}
+.email-box{max-width:620px;margin:32px auto 0;display:flex;gap:10px}
+.email-box input[type=email]{
+  flex:1;min-width:0;background:var(--ink2);border:2px solid var(--line);color:var(--cream);
+  font-family:var(--mono);font-size:14.5px;padding:15px 16px;border-radius:2px;
+}
+.email-box input[type=email]::placeholder{color:#5C5544}
+.email-box input[type=email]:focus{border-color:var(--gold);outline:none}
+.email-box .btn{flex:none}
+.email-filed{max-width:620px;margin:32px auto 0}
+.email-note{text-align:center;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--mute);margin-top:16px;text-transform:uppercase}
+
+/* ---------- footer ---------- */
+footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;position:relative;z-index:1}
+.foot-grid{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;margin-bottom:36px}
+.foot-brand{font-family:var(--disp);font-size:40px;color:var(--cream);letter-spacing:.03em}
+.foot-brand em{font-style:normal;color:var(--gold)}
+.foot-honest{font-family:var(--mono);font-size:13px;color:var(--mute);margin-top:10px;max-width:520px;line-height:1.7}
+.foot-tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;color:var(--gold);margin-top:14px;text-transform:uppercase}
+.foot-barcode{color:var(--gold);opacity:.85}
+.foot-barcode .barcode{height:64px;width:220px}
+.foot-bottom{
+  border-top:1px solid var(--line);padding-top:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;color:#5C5544;text-transform:uppercase;
+}
+
+/* ---------- toast ---------- */
+#toast{
+  position:fixed;left:50%;bottom:28px;transform:translate(-50%,80px);z-index:300;
+  background:var(--cream);color:var(--ink);font-family:var(--mono);font-size:13px;font-weight:700;
+  padding:14px 22px;border-radius:2px;box-shadow:0 12px 40px rgba(0,0,0,.5);
+  transition:transform .3s ease;max-width:calc(100vw - 40px);text-align:center;
+}
+#toast.show{transform:translate(-50%,0)}
+
+/* ---------- (no scroll-reveal: content is visible in normal document flow) ---------- */
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .vfeature{max-width:340px}
+  .exhibit{grid-template-columns:1fr;gap:28px;padding:28px}
+  .exhibit:nth-child(even of .exhibit){direction:ltr}
+  .x-media{max-width:320px}
+  .print-grid{grid-template-columns:1fr;gap:44px}
+  .mission-grid{grid-template-columns:1fr;gap:40px}
+  .drop-grid{grid-template-columns:1fr}
+  .honesty-card{padding:36px 26px 32px}
+}
+@media (max-width:760px){
+  section{padding:64px 0}
+  header.hero{padding:56px 0 52px}
+  html{scroll-padding-top:130px}
+  .nav-toggle{display:none!important}
+  .nav-inner{height:auto;min-height:64px;padding:12px 0 0;flex-wrap:wrap}
+  .nav-links{flex-basis:100%;border-top:1px solid var(--line);margin-top:12px;padding:6px 0;gap:4px 22px;flex-wrap:wrap}
+  .nav-links a{padding:10px 2px;font-size:12px}
+  .nav-links .btn{margin-left:auto;padding:9px 14px;font-size:12px;white-space:nowrap}
+  .hero h1{font-size:clamp(54px,17vw,84px)}
+  .hero-stats{gap:20px}
+  .nform{flex-direction:column}
+  .nform .btn{width:100%}
+  .email-box{flex-direction:column}
+  .honesty-attrs{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .ticker-track{animation:none}
+  .rc-cursor{animation:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav id="nav" aria-label="Primary">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Jesus Receipts — home">
+      <span class="brand-name">RECEIPT<em>S</em></span>
+      <span class="barcode" aria-hidden="true"></span>
+    </a>
+    <div class="nav-links" id="navlinks">
+      <a href="#evidence">THE EVIDENCE</a>
+      <a href="#drop">THE DROP</a>
+      <a href="#mission">MISSION</a>
+      <a href="#drop" class="btn gold small">Get the drop</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">JESUS RECEIPTS · THE HISTORICAL CASE FOR JESUS</div>
+        <h1 class="display">WE GOT<br><span class="gold">RECEIPTS.</span></h1>
+        <p class="hero-promise">The historical case for Jesus — itemized.</p>
+        <p class="hero-sub">Six exhibits. Sixty seconds each. Every claim sourced — from the historians, the archaeologists, and the other side's own witnesses. We're not here to preach at you. We're here to show you the paperwork.</p>
+        <div class="hero-ctas">
+          <a href="#evidence" class="btn gold">Watch the case</a>
+          <a href="#drop" class="btn ghost">Get the drop</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>6<em>/</em>6</b>RECEIPTS FILED</div>
+          <div><b>60<em>SEC</em></b>PER EXHIBIT</div>
+          <div><b>~5,700</b>GREEK MANUSCRIPTS</div>
+        </div>
+      </div>
+      <div class="vfeature">
+        <span class="vfeature-tag">Receipt 1 of 6 · Exhibit A · The Paper Trail</span>
+        <div class="vframe" data-video>
+          <video src="assets/video/receipt-1.mp4" poster="assets/posters/receipt-1.jpg" preload="none" playsinline controls aria-label="Watch Receipt 1: Exhibit A — The Paper Trail (60 seconds)"></video>
+          <button class="voverlay" type="button" aria-label="Play Receipt 1 — Exhibit A, The Paper Trail">
+            <span class="playbtn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="vtab">PLAY · 60 SEC</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="printer-strip">
+      <div class="printer-label"><em>■</em> FULL CASE SUMMARY — PRINTING LIVE</div>
+      <div class="printer">
+        <div class="printer-slot" aria-hidden="true"></div>
+        <div class="printer-body">
+          <div class="receipt wide" id="hero-receipt">
+            <div class="r-center"><strong style="font-size:16px;letter-spacing:.2em">JESUS RECEIPTS</strong><br><span class="r-foot">THE HISTORICAL CASE FOR JESUS · ITEMIZED</span></div>
+            <div class="r-line"></div>
+            <div class="rc-lines" id="hero-lines" aria-hidden="true"></div>
+            <div class="r-line"></div>
+            <div class="r-center rc-total" id="hero-total"><span class="r-gold" style="font-size:15px;letter-spacing:.08em">TOTAL: SIX RECEIPTS FILED</span><br><div class="stamp-row"><span class="stamp" style="margin-top:10px">VERIFIED</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="ticker"></div>
+</div>
+
+<section id="evidence">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">The case file</div>
+      <h2 class="sec-title display">Exhibit by exhibit.</h2>
+      <p class="sec-sub">Don't take our word for it. Take theirs. Watch the 60-second film, then open the file — every exhibit is a limited claim, itemized and sourced.</p>
+    </div>
+    <div class="honesty-banner">
+      <span class="stamp">The rule</span>
+      <p>Before you watch: the rule this whole site lives by is <em>"This doesn't prove the resurrection happened. It provides a receipt."</em> Each exhibit files one limited receipt — no more, no less.</p>
+      <a href="#honesty">Read the rule ↓</a>
+    </div>
+    <div class="exhibits">
+
+      <!-- ============ EXHIBIT A ============ -->
+      <article class="exhibit" id="exhibit-a">
+        <div class="x-media">
+          <div class="vframe" data-video>
+            <video src="assets/video/receipt-1.mp4" poster="assets/posters/receipt-1.jpg" preload="none" playsinline controls aria-label="Watch Receipt 1: Exhibit A — The Paper Trail (60 seconds)"></video>
+            <button class="voverlay" type="button" aria-label="Play Receipt 1 — Exhibit A, The Paper Trail">
+              <span class="playbtn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="vtab">PLAY · 60 SEC</span>
+            </button>
+          </div>
+        </div>
+        <div class="x-body">
+          <span class="stamp">VERIFIED</span>
+          <div class="x-no">Receipt 1 of 6 — Exhibit A</div>
+          <h3 class="display">The Paper Trail</h3>
+          <p class="x-claim">The New Testament is the <strong>best-attested text of the ancient world</strong> — thousands of copies, the earliest fragments within decades of the writings. No other ancient text even comes close.</p>
+          <button class="file-toggle" aria-expanded="false" aria-controls="file-a"><span class="caret">▸</span> Read the case file</button>
+        </div>
+        <div class="filewrap"><div><div class="filewrap-inner">
+          <div class="receipt file" id="file-a" role="region" aria-label="Exhibit A case file">
+            <div class="file-head"><span class="fex">EXHIBIT A · THE PAPER TRAIL</span><span class="fgrade">FILE GRADE: A–</span></div>
+            <div class="r-line"></div>
+            <div class="fitem"><span class="n">1</span><div><div class="t">COUNT: ~5,700 GREEK · ~24,000 TOTAL</div><div class="d">~5,700 Greek manuscripts (fragments to complete New Testaments), ~10,000 Latin, ~9,300+ in other ancient versions (Syriac, Coptic, Armenian, Ethiopic, Slavic). The count keeps growing — new papyri surface regularly.</div></div></div>
+            <div class="fitem"><span class="n">2</span><div><div class="t">GAP: DECADES, NOT A MILLENNIUM</div><div class="d">Original-to-earliest-copy gap: ~25–100 years for the New Testament, versus ~800–1,000 years for Tacitus' <em>Annals</em> — which survives in <em>two</em> principal medieval manuscripts (9th-century Fulda, 11th-century Monte Cassino).</div></div></div>
+            <div class="fitem"><span class="n">3</span><div><div class="t">THE STANDARD THEY ALREADY ACCEPT</div><div class="d">Historians call Caesar's <em>Gallic Wars</em> reliable on 10 copies with a 1,000-year gap. The New Testament has <em>2,400× the copies</em> with ~1/10 the gap. Apply the same standard to both; get a devastating result.</div></div></div>
+            <div class="fitem"><span class="n">4</span><div><div class="t">P52 — JOHN, COPIED WITHIN DECADES</div><div class="d">A credit-card-sized fragment of John's Gospel (John 18) found in Egypt, dated by handwriting to ~AD 100–175. Someone in Egypt was copying John within decades of the writings. The honest caveat too: the John Rylands Library itself now says recent research points "nearer to 200 AD." Even AD 200 is ~110 years vs. ~1,000 for Caesar.</div></div></div>
+            <div class="fitem"><span class="n">5</span><div><div class="t">COMPLETE CODICES BY ~AD 350</div><div class="d">Sinaiticus preserves the complete New Testament; Vaticanus nearly all of it (breaks off at Hebrews 9:14). Compare: our earliest complete Caesar is from the 9th century.</div></div></div>
+            <div class="fitem"><span class="n">6</span><div><div class="t">THE "VARIANTS" SCARE, DEFUSED</div><div class="d">~300,000 variants — Bart Ehrman's own count, and we quote it before he does. But ~70% are spelling differences; strip spelling, word order, and harmonizations, and ~400 disputed words remain in ~40 lines of ~20,000 (Metzger's comparative illustration, not a census). Scholars recover 97–99% of the original text with certainty — and no textual variant affects any cardinal doctrine. Metzger, Wallace, and even Ehrman agree on that. The variants are visible <em>because</em> we have so many copies to compare. More copies = more certainty, not less.</div></div></div>
+            <div class="fquote">"There is no body of ancient literature in the world which enjoys such a wealth of good textual attestation as the New Testament."<span class="who">— F.F. BRUCE, THE NEW TESTAMENT DOCUMENTS: ARE THEY RELIABLE?</span></div>
+            <div class="r-line"></div>
+            <div class="fno"><strong>WHAT THIS RECEIPT DOESN'T COVER</strong> — A well-preserved text isn't automatically a true one; the <em>Iliad</em> is well-preserved too. This exhibit only files one thing: we have what they wrote. Did it happen? That's Exhibits D, E, and F.</div>
+          </div>
+        </div></div></div>
+      </article>
+
+      <!-- ============ EXHIBIT B ============ -->
+      <article class="exhibit" id="exhibit-b">
+        <div class="x-media">
+          <div class="vframe" data-video>
+            <video src="assets/video/receipt-2.mp4" poster="assets/posters/receipt-2.jpg" preload="none" playsinline controls aria-label="Watch Receipt 2: Exhibit B — Hostile Witnesses (60 seconds)"></video>
+            <button class="voverlay" type="button" aria-label="Play Receipt 2 — Exhibit B, Hostile Witnesses">
+              <span class="playbtn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="vtab">PLAY · 60 SEC</span>
+            </button>
+          </div>
+        </div>
+        <div class="x-body">
+          <span class="stamp">VERIFIED</span>
+          <div class="x-no">Receipt 2 of 6 — Exhibit B</div>
+          <h3 class="display">Hostile Witnesses</h3>
+          <p class="x-claim">Josephus. Tacitus. Pliny. Suetonius. <strong>None of them were fans</strong> — and all of them write down the same footprint: a real man, crucified under Pilate.</p>
+          <button class="file-toggle" aria-expanded="false" aria-controls="file-b"><span class="caret">▸</span> Read the case file</button>
+        </div>
+        <div class="filewrap"><div><div class="filewrap-inner">
+          <div class="receipt file" id="file-b" role="region" aria-label="Exhibit B case file">
+            <div class="file-head"><span class="fex">EXHIBIT B · HOSTILE WITNESSES</span><span class="fgrade">FILE GRADE: A–</span></div>
+            <div class="r-line"></div>
+            <div class="fitem"><span class="n">1</span><div><div class="t">JOSEPHUS NAMES JESUS TWICE</div><div class="d">A Jewish priest turned Roman citizen, writing ~AD 93 for a Roman audience — not a Christian. The James passage (<em>Antiquities</em> 20.9.1) casually refers to "James, the brother of Jesus, who was called Christ." Accepted as authentic across the spectrum, skeptics included.</div></div></div>
+            <div class="fitem"><span class="n">2</span><div><div class="t">THE TESTIMONIUM — LEAD WITH THE CAVEAT</div><div class="d">Yes, Christian scribes touched up Josephus' longer Jesus passage (18.3.3) — we show that first, not last. Strip the three obvious interpolations and the authentic core reads exactly like Josephus: neutral, factual, slightly annoyed. Partial authenticity, not total forgery, is the majority position.</div></div></div>
+            <div class="fitem"><span class="n">3</span><div><div class="t">TACITUS RECORDS THE CRUCIFIXION</div><div class="d">Rome's greatest historian writes that "Christus… suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus" (<em>Annals</em> 15.44, ~AD 116) — in the same breath as calling Christianity "a most mischievous superstition." This is no Christian plant. (Small precision: Tacitus says "procurator" — the Pilate stone in Exhibit C reads <em>prefect</em>.)</div></div></div>
+            <div class="fitem"><span class="n">4</span><div><div class="t">PLINY TO THE EMPEROR, ~AD 112</div><div class="d">An imperial governor's official correspondence reports Christians singing hymns to Christ "as to a god." The divinity claim isn't a fourth-century invention — it's in Rome's paperwork ~80 years after the crucifixion.</div></div></div>
+            <div class="fitem"><span class="n">5</span><div><div class="t">ROME NOTICED WITHIN ~20 YEARS</div><div class="d">By ~AD 49 (Suetonius / <em>Claudius</em>), Jewish-Christian disturbances in Rome reach the emperor's ear — matching the expulsion in Acts 18:2. By AD 64, Nero persecutes an "immense multitude" (Tacitus). Movements built on nothing don't get imperial attention that fast.</div></div></div>
+            <div class="fitem"><span class="n">6</span><div><div class="t">NO ANCIENT CRITIC EVER DENIED HE EXISTED</div><div class="d">The ancients who hated Christianity — Celsus, Porphyry, Julian — argued about <em>who</em> Jesus was, never <em>whether</em> he was. The "he never existed" position is a 19th-century invention: Dupuis/Volney; Bruno Bauer first affirmed it academically.</div></div></div>
+            <div class="fquote">"Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus, and a most mischievous superstition, thus checked for the moment, again broke out not only in Judea, the first source of the evil, but even in Rome."<span class="who">— TACITUS, ANNALS 15.44 (CHURCH–BRODRIBB)</span></div>
+            <div class="r-line"></div>
+            <div class="fno"><strong>WHAT THIS RECEIPT DOESN'T COVER</strong> — These witnesses don't prove the resurrection or the divinity of Christ — and we never say they do. They file the footprint: a real person, executed under Pilate, whose followers multiplied across the empire within a generation.</div>
+          </div>
+        </div></div></div>
+      </article>
+
+      <!-- ============ EXHIBIT C ============ -->
+      <article class="exhibit" id="exhibit-c">
+        <div class="x-media">
+          <div class="vframe" data-video>
+            <video src="assets/video/receipt-3.mp4" poster="assets/posters/receipt-3.jpg" preload="none" playsinline controls aria-label="Watch Receipt 3: Exhibit C — Dirt Don't Lie (60 seconds)"></video>
+            <button class="voverlay" type="button" aria-label="Play Receipt 3 — Exhibit C, Dirt Don't Lie">
+              <span class="playbtn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="vtab">PLAY · 60 SEC</span>
+            </button>
+          </div>
+        </div>
+        <div class="x-body">
+          <span class="stamp">VERIFIED</span>
+          <div class="x-no">Receipt 3 of 6 — Exhibit C</div>
+          <h3 class="display">Dirt Don't Lie</h3>
+          <p class="x-claim">The Pilate stone. Caiaphas' bone box. A crucified man's heel bone. John's five porticoes. <strong>The ground keeps confirming the background.</strong> Legends botch incidental details. These don't.</p>
+          <button class="file-toggle" aria-expanded="false" aria-controls="file-c"><span class="caret">▸</span> Read the case file</button>
+        </div>
+        <div class="filewrap"><div><div class="filewrap-inner">
+          <div class="receipt file" id="file-c" role="region" aria-label="Exhibit C case file">
+            <div class="file-head"><span class="fex">EXHIBIT C · DIRT DON'T LIE</span><span class="fgrade">FILE GRADE: A–</span></div>
+            <div class="r-line"></div>
+            <div class="fitem"><span class="n">1</span><div><div class="t">THE PILATE STONE — 1961, CAESAREA</div><div class="d">"…Pontius Pilatus… Praefectus Iudaeae" — Pilate's name, his correct title, and his window (AD 26–36), carved in Latin on a theater staircase, now in the Israel Museum. Before 1961, skeptics could note that Pilate appeared in no archaeological record. They can no longer say that.</div></div></div>
+            <div class="fitem"><span class="n">2</span><div><div class="t">THE STONE CORRECTS OUR OWN SOURCES</div><div class="d">It reads <em>prefect</em>, not <em>procurator</em> — the title Tacitus used. We print this because we don't cherry-pick: the archaeology is the authority, and it refined the literary record.</div></div></div>
+            <div class="fitem"><span class="n">3</span><div><div class="t">THE CAIAPHAS OSSUARY — 1990, JERUSALEM</div><div class="d">"Joseph son of Caiaphas" — <em>very likely</em> the high priest's family tomb. The inscription gives the name, not the title, so "very likely" is the honest word, not "certain." The man who sent Jesus to Pilate very likely has a labeled bone box.</div></div></div>
+            <div class="fitem"><span class="n">4</span><div><div class="t">THE CRUCIFIED MAN — 1968, JERUSALEM</div><div class="d">Yehohanan's heel bone with a 4.5-inch (11.5 cm) iron nail driven through it — the tip bent after striking a knot in the wood; the foot was removed with the nail and wood still attached. The first skeletal evidence of Roman crucifixion ever discovered. Confirms that nailing was a real Roman execution practice in 1st-century Judea — consistent with the Gospel accounts.</div></div></div>
+            <div class="fitem"><span class="n">5</span><div><div class="t">JOHN'S PORTICOES — FIVE OF THEM</div><div class="d">John 5:2 describes the Pool of Bethesda with five porticoes — a detail some scholars long considered symbolic or invented. Excavation found exactly that. And the Pool of Siloam (John 9) surfaced in 2004. This isn't a closed 19th-century file — the confirmations keep coming.</div></div></div>
+            <div class="fitem"><span class="n">6</span><div><div class="t">WHAT WE LEFT OUT — ON PURPOSE</div><div class="d">The James ossuary (authenticity unresolved). The Nazareth inscription (a 2020 marble-isotope study traced the marble to Kos, actively undercutting the Jesus-tomb theory). The Shroud (its own debate). Printing what we excluded is the strongest trust signal in this file: a brand built on receipts doesn't file disputed ones.</div></div></div>
+            <div class="r-line"></div>
+            <div class="fno">ACROSS SIX DECADES OF RELEVANT FINDS, THE PATTERN RUNS TOWARD CONFIRMATION — NO EXCAVATED FIND HAS FALSIFIED A GOSPEL BACKGROUND DETAIL.</div>
+            <div class="r-line"></div>
+            <div class="fno"><strong>WHAT THIS RECEIPT DOESN'T COVER</strong> — The dirt proves the stage, not the play. Archaeology can't excavate a resurrection. What's filed here: the Gospel writers described a real world with precision — the necessary foundation for taking their central claims seriously.</div>
+          </div>
+        </div></div></div>
+      </article>
+
+      <!-- ============ EXHIBIT D ============ -->
+      <article class="exhibit" id="exhibit-d">
+        <div class="x-media">
+          <div class="vframe" data-video>
+            <video src="assets/video/receipt-4.mp4" poster="assets/posters/receipt-4.jpg" preload="none" playsinline controls aria-label="Watch Receipt 4: Exhibit D — The Early Creed (60 seconds)"></video>
+            <button class="voverlay" type="button" aria-label="Play Receipt 4 — Exhibit D, The Early Creed">
+              <span class="playbtn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="vtab">PLAY · 60 SEC</span>
+            </button>
+          </div>
+        </div>
+        <div class="x-body">
+          <span class="stamp">VERIFIED</span>
+          <div class="x-no">Receipt 4 of 6 — Exhibit D</div>
+          <h3 class="display">The Early Creed</h3>
+          <p class="x-claim">1 Corinthians 15:3–7 — the claim that Jesus died, was buried, rose, and appeared — was <strong>already a fixed, memorized creed within months to a few years of the crucifixion</strong>. Skeptical scholars grant the dating.</p>
+          <button class="file-toggle" aria-expanded="false" aria-controls="file-d"><span class="caret">▸</span> Read the case file</button>
+        </div>
+        <div class="filewrap"><div><div class="filewrap-inner">
+          <div class="receipt file" id="file-d" role="region" aria-label="Exhibit D case file">
+            <div class="file-head"><span class="fex">EXHIBIT D · THE EARLY CREED</span><span class="fgrade">FILE GRADE: A–</span></div>
+            <div class="r-line"></div>
+            <div class="fitem"><span class="n">1</span><div><div class="t">RECEIVED / DELIVERED — TECHNICAL TERMS</div><div class="d">Paul uses <em>paralambanō</em> ("received") and <em>paradidōmi</em> ("delivered") — the standard ancient idiom for transmitting tradition. He's flagging: I'm quoting, not composing.</div></div></div>
+            <div class="fitem"><span class="n">2</span><div><div class="t">IT DOESN'T SOUND LIKE PAUL</div><div class="d">The passage is tight, parallel, rhythmic — nothing like his normal prose — with a concentration of phrases uncharacteristic of Paul and Semitic coloring. Scholars read it as a pre-Pauline fragment embedded in the letter.</div></div></div>
+            <div class="fitem"><span class="n">3</span><div><div class="t">LIKELY COINED BEFORE PAUL JOINED</div><div class="d">Verse 8's "last of all… to me also" appears to exclude Paul from "all the apostles" in v. 7 — so the creed was probably coined while the apostolic circle was considered closed: before his conversion. Honest caveat: a Habermas-school inference, not standard critical fare.</div></div></div>
+            <div class="fitem"><span class="n">4</span><div><div class="t">PAUL MET THE NAMED EYEWITNESSES</div><div class="d">The two apostles the creed names — Cephas and James — are exactly the two Paul spent fifteen days with on his first Jerusalem visit (Galatians 1:18–19). The leading hypothesis is that this is where he received it.</div></div></div>
+            <div class="fitem"><span class="n">5</span><div><div class="t">"MOST OF WHOM ARE STILL ALIVE"</div><div class="d">"More than five hundred brothers at one time, most of whom are still alive" — written ~AD 53–55, roughly 25 years after the events. We read that as an invitation to check; the reading is contested (Ehrman's demographic objection is on the record). Either way: an impossibly early, checkable claim.</div></div></div>
+            <div class="fitem"><span class="n">6</span><div><div class="t">SKEPTICAL SCHOLARS GRANT THE DATING</div><div class="d">Lüdemann (atheist): "the elements in the tradition are to be dated to the first two years after the crucifixion… not later than three years." Goulder (atheist): "goes back at least to what Paul was taught when he was converted, a couple of years after the crucifixion." Ehrman (agnostic): "This passage almost certainly contains a pre-Pauline confession, or creed, of some kind." Even the mythicist Richard Carrier concedes the dating.</div></div></div>
+            <div class="r-line"></div>
+            <div class="fno"><strong>WHAT THIS RECEIPT DOESN'T COVER</strong> — This files the claim's <em>age</em>, not the event. But "the legend grew over decades" is done — there were no decades. The belief was fixed, memorized, and circulating while the eyewitnesses were still alive to object.</div>
+          </div>
+        </div></div></div>
+      </article>
+
+      <!-- ============ EXHIBIT E ============ -->
+      <article class="exhibit" id="exhibit-e">
+        <div class="x-media">
+          <div class="vframe" data-video>
+            <video src="assets/video/receipt-5.mp4" poster="assets/posters/receipt-5.jpg" preload="none" playsinline controls aria-label="Watch Receipt 5: Exhibit E — The Empty Tomb (60 seconds)"></video>
+            <button class="voverlay" type="button" aria-label="Play Receipt 5 — Exhibit E, The Empty Tomb">
+              <span class="playbtn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="vtab">PLAY · 60 SEC</span>
+            </button>
+          </div>
+        </div>
+        <div class="x-body">
+          <span class="stamp">VERIFIED</span>
+          <div class="x-no">Receipt 5 of 6 — Exhibit E</div>
+          <h3 class="display">The Empty Tomb</h3>
+          <p class="x-claim">Jesus was buried in a known tomb — and within days, <strong>that tomb was empty</strong>. Even his enemies' earliest counter-story doesn't deny it; it tries to explain it.</p>
+          <button class="file-toggle" aria-expanded="false" aria-controls="file-e"><span class="caret">▸</span> Read the case file</button>
+        </div>
+        <div class="filewrap"><div><div class="filewrap-inner">
+          <div class="receipt file" id="file-e" role="region" aria-label="Exhibit E case file">
+            <div class="file-head"><span class="fex">EXHIBIT E · THE EMPTY TOMB</span><span class="fgrade">FILE GRADE: B+</span></div>
+            <div class="r-line"></div>
+            <div class="fitem"><span class="n">1</span><div><div class="t">BURIED BY A NAMED MEMBER OF THE ENEMY'S COUNCIL</div><div class="d">Joseph of Arimathea (Mark 15:43) — a named member of the very council that condemned him. Jerusalem was a small city and he was known. You don't invent that kind of burial hero if the burial never happened.</div></div></div>
+            <div class="fitem"><span class="n">2</span><div><div class="t">WOMEN FOUND IT — ALL FOUR GOSPELS AGREE</div><div class="d">In first-century Judea, women's testimony was discounted — Josephus says it wasn't even permitted as witnesses in court (<em>Antiquities</em> 4.219). Habermas: "Since the testimony of women was not allowed in a law court, why would they be cited as witnesses unless that is what happened?" A fabricated story designed to convince would be <em>unlikely</em> to choose them.</div></div></div>
+            <div class="fitem"><span class="n">3</span><div><div class="t">THE OTHER SIDE'S STORY CONFESSES IT</div><div class="d">Matthew 28:11–15: the chief priests' explanation is that "his disciples came by night and stole him away while we were asleep." You don't invent a stolen-body story for an occupied tomb — the opposition's first move <em>admits</em> the tomb was empty. (The guard detail appears only in Matthew and is widely seen as Matthean apologetic. We don't lean on it.)</div></div></div>
+            <div class="fitem"><span class="n">4</span><div><div class="t">PREACHED WHERE THE TOMB WAS</div><div class="d">The resurrection was proclaimed in Jerusalem — the very city of the tomb — within weeks. If a body were in that tomb, the movement dies in days: producing it ends Christianity before it starts. Nobody produced one.</div></div></div>
+            <div class="fitem"><span class="n">5</span><div><div class="t">"BY FAR MOST EXEGETES"</div><div class="d">Resurrection specialist Jacob Kremer's summary of the scholarship: "By far most exegetes hold firmly to the reliability of the biblical statements concerning the empty tomb." Habermas' mid-2000s survey put support at ~75% — the majority framing is defensible.</div></div></div>
+            <div class="fitem"><span class="n">6</span><div><div class="t">ONE EARLY TRADITION, NOT A BOLT-ON</div><div class="d">Mark's pre-Gospel passion source doesn't end at burial — the empty-tomb account is tied to the burial narrative verbally and grammatically. And the earliest creed says "he was buried" (1 Cor 15:4, Exhibit D) — for a first-century Jew, burial-and-raising language means the tomb is empty.</div></div></div>
+            <div class="fquote">"By far most exegetes hold firmly to the reliability of the biblical statements concerning the empty tomb."<span class="who">— JACOB KREMER, DIE OSTEREVANGELIEN (1977)</span></div>
+            <div class="r-line"></div>
+            <div class="fno"><strong>WHAT THIS RECEIPT DOESN'T COVER</strong> — An empty tomb alone proves a disappearance that demands explanation, not a resurrection. Theft, wrong tomb, and swoon all fail on the evidence — but the positive case is Exhibit F's. E files the empty tomb; F fills it with meaning.</div>
+          </div>
+        </div></div></div>
+      </article>
+
+      <!-- ============ EXHIBIT F ============ -->
+      <article class="exhibit" id="exhibit-f">
+        <div class="x-media">
+          <div class="vframe" data-video>
+            <video src="assets/video/receipt-6.mp4" poster="assets/posters/receipt-6.jpg" preload="none" playsinline controls aria-label="Watch Receipt 6: Exhibit F — The Witnesses (60 seconds)"></video>
+            <button class="voverlay" type="button" aria-label="Play Receipt 6 — Exhibit F, The Witnesses">
+              <span class="playbtn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              <span class="vtab">PLAY · 60 SEC</span>
+            </button>
+          </div>
+        </div>
+        <div class="x-body">
+          <span class="stamp">VERIFIED</span>
+          <div class="x-no">Receipt 6 of 6 — Exhibit F</div>
+          <h3 class="display">The Witnesses</h3>
+          <p class="x-claim">Cowards became martyrs. A skeptic brother converted. Christianity's worst enemy flipped. <strong>Because, they said, they saw him alive.</strong> People don't die for what they know is a lie.</p>
+          <button class="file-toggle" aria-expanded="false" aria-controls="file-f"><span class="caret">▸</span> Read the case file</button>
+        </div>
+        <div class="filewrap"><div><div class="filewrap-inner">
+          <div class="receipt file" id="file-f" role="region" aria-label="Exhibit F case file">
+            <div class="file-head"><span class="fex">EXHIBIT F · THE WITNESSES</span><span class="fgrade">FILE GRADE: A–</span></div>
+            <div class="r-line"></div>
+            <div class="fitem"><span class="n">1</span><div><div class="t">THE LIST IS EARLY AND CHECKABLE</div><div class="d">The appearance roster (1 Cor 15:5–8) dates within ~5 years of the crucifixion and names living witnesses — "most of whom are still alive." That's not legend; that's a dare.</div></div></div>
+            <div class="fitem"><span class="n">2</span><div><div class="t">COWARDS → MARTYRS</div><div class="d">Friday they fled (Mark 14:50); Peter denied him three times. Within weeks they're proclaiming the resurrection in Jerusalem through imprisonment, beatings, and execution. Something happened between Friday and Pentecost.</div></div></div>
+            <div class="fitem"><span class="n">3</span><div><div class="t">THE SKEPTIC CONVERTED</div><div class="d">His own family tried to restrain him — "he's out of his mind" (Mark 3:21). His brothers didn't believe (John 7:5). After the crucifixion, James leads the Jerusalem church — and Josephus records that James, the brother of Jesus, was stoned around AD 62. What converts a skeptical brother?</div></div></div>
+            <div class="fitem"><span class="n">4</span><div><div class="t">THE ENEMY CONVERTED</div><div class="d">Paul, the movement's most violent enemy — hunting Christians with arrest warrants (Acts 9) — becomes its most prolific missionary: 13 of 27 New Testament books traditionally attributed to him (critical scholars accept only 7 as undisputed), through shipwrecks, beatings, and imprisonment. An enemy doesn't flip for a story he knows is false.</div></div></div>
+            <div class="fitem"><span class="n">5</span><div><div class="t">500 AT ONCE KILLS THE HALLUCINATION THEORY</div><div class="d">Grief hallucinations are real — individual, private, brief — and they happen to the bereaved, not to skeptics (James) or enemies (Paul). There is no documented case of five hundred people sharing one hallucination. And no hallucination empties a tomb (Exhibit E).</div></div></div>
+            <div class="fitem"><span class="n">6</span><div><div class="t">THE LIE HYPOTHESIS SELF-DESTRUCTS</div><div class="d">Yes, people die for false beliefs they <em>think</em> are true. But if they'd invented it, they'd have known it was a lie — and conspiracies unravel under pressure. This one grew under persecution, from ~120 (Acts 1:15) to an "immense multitude" in Rome by AD 64 (Tacitus, Exhibit B).</div></div></div>
+            <div class="r-line"></div>
+            <div class="r-center"><span class="r-gold" style="font-size:16px;letter-spacing:.08em">TOTAL: SIX RECEIPTS FILED</span><br><span class="r-foot" style="margin-top:6px;display:inline-block">JESUS RECEIPTS.</span></div>
+            <div class="r-line"></div>
+            <div class="fno"><strong>WHAT THIS RECEIPT DOESN'T COVER</strong> — It doesn't claim every apostle's martyrdom legend is airtight; some aren't, and we say so. It files the pattern: the witnesses believed what they reported strongly enough to die for it, and the naturalistic alternatives each explain part of the data while breaking on the rest.</div>
+          </div>
+        </div></div></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ HONESTY RULE ============ -->
+<section id="honesty">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="sec-kicker">The trust engine</div>
+      <h2 class="sec-title display">The honesty rule.</h2>
+    </div>
+    <div class="receipt honesty-card">
+      <span class="stamp">The honesty rule</span>
+      <p class="honesty-line">"This doesn't prove the resurrection happened. <em>It provides a receipt.</em>"</p>
+      <div class="r-line"></div>
+      <div class="honesty-attrs">
+        <div class="yes">
+          <h4>✓ What we claim</h4>
+          <p>That the historical evidence for Jesus — the manuscripts, the witnesses, the archaeology, the dating, the tomb, the aftermath — is far better than you've ever been told, and it deserves a hearing. That each exhibit files one limited, itemized, sourced receipt. That the objections get printed too, answered straight.</p>
+        </div>
+        <div class="no">
+          <h4>✕ What we don't</h4>
+          <p>That any single receipt proves the resurrection. That the skeptics have no arguments — they do, and we quoted some of them above. That a quote is verbatim when it's a paraphrase, a number exact when it's a range, or an excluded artifact proven when it's only plausible. No overclaiming. Ever.</p>
+        </div>
+      </div>
+      <div class="r-line"></div>
+      <div class="honesty-sign">The receipts speak for themselves · <b>Jesus receipts.</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRINT YOUR RECEIPT ============ -->
+<section id="print">
+  <div class="wrap print-grid">
+    <div class="print-copy">
+      <div class="sec-kicker">The viral mechanic</div>
+      <h2 class="sec-title display">Print your receipt.</h2>
+      <p class="sec-sub">One tap. The whole case, itemized, printed before your eyes. Screenshot it. Send it to the group chat. Tag the skeptic.</p>
+      <br><button class="btn gold" id="print-btn">File my receipt</button>
+    </div>
+    <div >
+      <div class="receipt big-receipt">
+        <div class="r-center"><strong style="font-size:16px;letter-spacing:.2em">JESUS RECEIPTS</strong><br><span class="r-foot">THE CASE FOR JESUS — ITEMIZED<br>RECEIPT #000001</span></div>
+        <div class="r-line"></div>
+        <div class="rc-lines" id="big-lines"><span style="color:#999">— press the button —</span></div>
+        <div class="r-line"></div>
+        <div class="r-center rc-total" id="big-total"><strong>TOTAL: SIX RECEIPTS FILED</strong><br><br><span class="r-foot">THANK YOU · KEEP RECEIPT · NO RETURNS</span><div class="stamp-row"><span class="stamp" style="margin-top:10px">VERIFIED</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE DROP (MERCH) ============ -->
+<section id="drop">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-kicker">Drop 001 — The case, itemized</div>
+      <h2 class="sec-title display">Wear the evidence.</h2>
+      <p class="sec-sub">The brand, translated onto every thread. Each piece wears the case file — exhibits itemized, total filed, barcode stamped. Prices and the store open at launch; designs below for preview.</p>
+    </div>
+    <div class="drop-grid">
+
+      <article class="product">
+        <div class="p-imgs">
+          <span class="p-chip">Preview · Drop 001</span>
+          <img class="on" src="assets/merch/receipts-tee-lifestyle.jpg" alt="Model on a rooftop at golden hour wearing the near-black ITEMIZED hero tee — a tall receipt graphic: gold JESUS RECEIPTS wordmark, six exhibits itemized, TOTAL: SIX RECEIPTS FILED, barcode">
+          <img src="assets/merch/receipts-tee-front.png" alt="ITEMIZED hero tee, flat lay: near-black tee with full front receipt print — JESUS RECEIPTS wordmark in candlelight gold, exhibits itemized, TOTAL: SIX RECEIPTS FILED in gold, barcode, THANK YOU — KEEP RECEIPT — NO RETURNS" loading="lazy">
+          <div class="p-view" role="group" aria-label="Tee views">
+            <button type="button" class="on" data-view="0">Worn</button>
+            <button type="button" data-view="1">Flat</button>
+          </div>
+        </div>
+        <div class="p-body">
+          <h3>"ITEMIZED" <em>Hero Tee</em></h3>
+          <ul class="p-spec">
+            <li>Front-chest receipt print — tall thermal-receipt graphic, full length</li>
+            <li>Gold <strong>JESUS RECEIPTS</strong> wordmark over "STORE #003 — EXHIBIT RECEIPT"</li>
+            <li>All six exhibits itemized with dotted leaders; gold <strong>TOTAL: SIX RECEIPTS FILED</strong></li>
+            <li>Barcode #884921-007856 · "THANK YOU — KEEP RECEIPT — NO RETURNS"</li>
+            <li>Near-black tee · off-white + gold soft-hand screen print</li>
+          </ul>
+          <div class="p-form" data-notify="notify-tee">
+            <div class="flabel">Notify me at launch</div>
+            <form class="nform" novalidate>
+              <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address for the ITEMIZED Hero Tee launch notification">
+              <button class="btn gold small" type="submit">Notify me</button>
+            </form>
+          </div>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="p-imgs">
+          <span class="p-chip">Preview · Drop 001</span>
+          <img class="on" src="assets/merch/receipts-cap-lifestyle.jpg" alt="Model on a downtown street wearing the near-black VERIFIED cap — candlelight-gold embroidered VERIFIED stamp">
+          <img src="assets/merch/receipts-cap-front.png" alt="VERIFIED cap product shot: near-black unstructured dad cap with candlelight-gold embroidered VERIFIED inside a rectangular rubber-stamp border, stitched tilted as if stamped" loading="lazy">
+          <div class="p-view" role="group" aria-label="Cap views">
+            <button type="button" class="on" data-view="0">Worn</button>
+            <button type="button" data-view="1">Flat</button>
+          </div>
+        </div>
+        <div class="p-body">
+          <h3>"VERIFIED" <em>Cap</em></h3>
+          <ul class="p-spec">
+            <li>Gold-embroidered <strong>VERIFIED</strong> inside a rectangular rubber-stamp border</li>
+            <li>Stitched tilted, like it was just slammed down</li>
+            <li>Front panel; small gold <strong>JESUS RECEIPTS</strong> over the back strap</li>
+            <li>Near-black unstructured six-panel · candlelight-gold thread</li>
+          </ul>
+          <div class="p-form" data-notify="notify-cap">
+            <div class="flabel">Notify me at launch</div>
+            <form class="nform" novalidate>
+              <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address for the VERIFIED Cap launch notification">
+              <button class="btn gold small" type="submit">Notify me</button>
+            </form>
+          </div>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="p-imgs">
+          <span class="p-chip">Preview · Drop 001</span>
+          <img class="on" src="assets/merch/receipts-hoodie-lifestyle.jpg" alt="Model from behind at desert golden hour wearing the near-black CASE FILED hoodie — back print of the case-file receipt in a gold frame">
+          <img src="assets/merch/receipts-hoodie-back.png" alt="CASE FILED hoodie back, flat lay: declassified case-file receipt in a gold double-rule frame — RECEIPT 6 OF 6 — FILED, all six exhibits itemized, gold TOTAL: SIX RECEIPTS FILED, tilted red VERIFIED stamp" loading="lazy">
+          <div class="p-view" role="group" aria-label="Hoodie views">
+            <button type="button" class="on" data-view="0">Worn</button>
+            <button type="button" data-view="1">Flat</button>
+          </div>
+        </div>
+        <div class="p-body">
+          <h3>"CASE FILED" <em>Hoodie</em></h3>
+          <ul class="p-spec">
+            <li>Back print: declassified case-file receipt in a <strong>gold double-rule frame</strong></li>
+            <li>Gold <strong>RECEIPT 6 OF 6 — FILED</strong> header; all six exhibits itemized</li>
+            <li>Gold <strong>TOTAL: SIX RECEIPTS FILED</strong> · tilted <strong>red VERIFIED stamp</strong></li>
+            <li>Front: small gold "EXHIBIT A" tag print at left chest</li>
+            <li>Near-black heavyweight pullover · off-white + gold + stamp-red print</li>
+          </ul>
+          <div class="p-form" data-notify="notify-hoodie">
+            <div class="flabel">Notify me at launch</div>
+            <form class="nform" novalidate>
+              <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address for the CASE FILED Hoodie launch notification">
+              <button class="btn gold small" type="submit">Notify me</button>
+            </form>
+          </div>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="p-imgs">
+          <span class="p-chip">Preview · Drop 001</span>
+          <img class="on" src="assets/merch/receipts-mug-lifestyle.jpg" alt="The matte near-black MORNING EVIDENCE mug with the wrap receipt graphic on a morning table, steam rising">
+          <img src="assets/merch/receipts-mug-flat.png" alt="MORNING EVIDENCE mug product shot: matte near-black ceramic with wrap-around receipt graphic — six exhibits itemized, gold TOTAL: SIX RECEIPTS FILED, barcode, gold JESUS RECEIPTS mark near the handle" loading="lazy">
+          <div class="p-view" role="group" aria-label="Mug views">
+            <button type="button" class="on" data-view="0">Scene</button>
+            <button type="button" data-view="1">Flat</button>
+          </div>
+        </div>
+        <div class="p-body">
+          <h3>"MORNING EVIDENCE" <em>Mug</em></h3>
+          <ul class="p-spec">
+            <li><strong>Wrap-around receipt graphic</strong> — six exhibits itemized</li>
+            <li>Gold <strong>TOTAL: SIX RECEIPTS FILED</strong> · barcode · "THANK YOU — KEEP RECEIPT"</li>
+            <li>Gold <strong>JESUS RECEIPTS</strong> wordmark near the handle</li>
+            <li>Matte near-black ceramic · full-wrap sublimation · off-white + gold</li>
+          </ul>
+          <div class="p-form" data-notify="notify-mug">
+            <div class="flabel">Notify me at launch</div>
+            <form class="nform" novalidate>
+              <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address for the MORNING EVIDENCE Mug launch notification">
+              <button class="btn gold small" type="submit">Notify me</button>
+            </form>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <p class="drop-note">Every piece funds the mission <a href="#mission">↓ SEE WHERE IT GOES</a></p>
+  </div>
+</section>
+
+<!-- ============ MISSION ============ -->
+<section id="mission">
+  <div class="wrap mission-grid">
+    <div >
+      <div class="sec-kicker">The mission</div>
+      <h2 class="sec-title display">Profits with<br>a purpose.</h2>
+      <p><strong>100% of net profits</strong> fund Christian mission work — after the few hundred dollars a month it takes to keep the site running.</p>
+      <p>Where it goes: feeding the hungry, lifting the poor, and carrying hope to people who haven't heard it yet. We don't name names here — the work isn't ours to brand.</p>
+      <p><strong>Every year we publish a public giving report.</strong> Every dollar. Every destination. No fine print — just the receipt.</p>
+    </div>
+    <div class="give-card">
+      <div class="big display">100%</div>
+      <p>OF NET PROFITS → MISSIONS<br><br>Annual public giving report.<br>No fine print. Just the receipt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMAIL / WATCHLIST ============ -->
+<section class="email-sec" id="join">
+  <div class="wrap">
+    <div class="sec-head center" style="margin-bottom:0">
+      <div class="sec-kicker">The watchlist</div>
+      <h2 class="sec-title display">Get the next exhibit first.</h2>
+      <p class="sec-sub">One email per drop. No spam. Unsubscribe whenever — no hard feelings, keep the receipt.</p>
+    </div>
+    <div id="join-form-wrap">
+      <form class="email-box" id="email-form" novalidate>
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button class="btn gold" type="submit">Join</button>
+      </form>
+    </div>
+    <p class="email-note">THE HONESTY RULE APPLIES TO INBOXES TOO</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">JESUS <em>RECEIPTS</em></div>
+        <div class="foot-honest">"This doesn't prove the resurrection happened. It provides a receipt."</div>
+        <div class="foot-tag">WE GOT RECEIPTS. — KEEP RECEIPT · NO RETURNS</div>
+      </div>
+      <div class="foot-barcode" aria-hidden="true"><span class="barcode"></span></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 JESUS RECEIPTS — FAITH · HISTORY · EVIDENCE</span>
+      <span>TOTAL: SIX RECEIPTS FILED</span>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+"use strict";
+var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- ticker ---------- */
+(function(){
+  var items = [
+    "EXHIBIT A — THE PAPER TRAIL","VERIFIED",
+    "EXHIBIT B — HOSTILE WITNESSES","VERIFIED",
+    "EXHIBIT C — DIRT DON'T LIE","VERIFIED",
+    "EXHIBIT D — THE EARLY CREED","VERIFIED",
+    "EXHIBIT E — THE EMPTY TOMB","VERIFIED",
+    "EXHIBIT F — THE WITNESSES","VERIFIED",
+    "WE GOT RECEIPTS","TOTAL: SIX RECEIPTS FILED"
+  ];
+  var seq = items.map(function(t){ return '<span class="titem">'+t+'</span><span class="rdot">◆</span>'; }).join('');
+  document.getElementById('ticker').innerHTML = seq + seq;
+})();
+
+/* ---------- zigzag tear on receipt cards ---------- */
+(function(){
+  var els = document.querySelectorAll('.receipt');
+  if(!els.length || !window.CSS || !CSS.supports('clip-path','polygon(0 0)')) return;
+  var tooth = 1.9, depth = 9;
+  var pts = ['0 0','100% 0','100% calc(100% - '+depth+'px)'];
+  var x = 100;
+  while(x > 0){
+    x = Math.max(0, Math.round((x - tooth)*100)/100);
+    var mid = Math.round((x + tooth/2)*100)/100;
+    pts.push(mid + '% 100%');
+    pts.push(x + '% calc(100% - '+depth+'px)');
+  }
+  var path = 'polygon(' + pts.join(',') + ')';
+  els.forEach(function(el){ el.style.clipPath = path; });
+})();
+
+/* ---------- receipt line printer ---------- */
+var CASE_LINES = [
+  "EXHIBIT A · THE PAPER TRAIL .... FILED",
+  "EXHIBIT B · HOSTILE WITNESSES ... FILED",
+  "EXHIBIT C · DIRT DON'T LIE ...... FILED",
+  "EXHIBIT D · THE EARLY CREED ..... FILED",
+  "EXHIBIT E · THE EMPTY TOMB ...... FILED",
+  "EXHIBIT F · THE WITNESSES ....... FILED"
+];
+
+function toast(msg){
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._h);
+  t._h = setTimeout(function(){ t.classList.remove('show'); }, 3400);
+}
+
+/* hero printer: loops */
+(function(){
+  var box = document.getElementById('hero-lines');
+  var total = document.getElementById('hero-total');
+  if(reduceMotion){
+    box.innerHTML = CASE_LINES.map(function(l){ return '<div>'+l+'</div>'; }).join('');
+    total.style.opacity = 1;
+    return;
+  }
+  var i = 0;
+  function next(){
+    if(i >= CASE_LINES.length){
+      total.style.opacity = 1;
+      setTimeout(function(){
+        box.innerHTML = '';
+        total.style.opacity = 0;
+        i = 0;
+        setTimeout(next, 700);
+      }, 8000);
+      return;
+    }
+    var d = document.createElement('div');
+    d.appendChild(document.createTextNode(CASE_LINES[i++]));
+    box.appendChild(d);
+    setTimeout(next, 520);
+  }
+  setTimeout(next, 700);
+})();
+
+/* print-your-receipt interactive */
+document.getElementById('print-btn').addEventListener('click', function(){
+  var box = document.getElementById('big-lines');
+  var total = document.getElementById('big-total');
+  var btn = this;
+  box.innerHTML = '';
+  total.style.opacity = 0;
+  if(reduceMotion){
+    box.innerHTML = CASE_LINES.map(function(l){ return '<div>'+l+'</div>'; }).join('');
+    total.style.opacity = 1;
+    btn.textContent = 'FILE IT AGAIN';
+    toast('Receipt printed. Screenshot it. Send it to the group chat.');
+    return;
+  }
+  btn.disabled = true;
+  btn.textContent = 'FILING…';
+  var i = 0;
+  (function step(){
+    if(i >= CASE_LINES.length){
+      total.style.opacity = 1;
+      btn.disabled = false;
+      btn.textContent = 'FILE IT AGAIN';
+      toast('Receipt printed. Screenshot it. Send it to the group chat.');
+      return;
+    }
+    var d = document.createElement('div');
+    d.appendChild(document.createTextNode(CASE_LINES[i++]));
+    box.appendChild(d);
+    setTimeout(step, 380);
+  })();
+});
+
+/* ---------- click-to-play videos ---------- */
+document.querySelectorAll('[data-video]').forEach(function(frame){
+  var video = frame.querySelector('video');
+  var overlay = frame.querySelector('.voverlay');
+  overlay.addEventListener('click', function(){
+    document.querySelectorAll('[data-video] video').forEach(function(v){
+      if(v !== video){ v.pause(); }
+    });
+    var p = video.play();
+    if(p && p.catch){ p.catch(function(){}); }
+  });
+  video.addEventListener('play', function(){ frame.classList.add('playing'); });
+  video.addEventListener('pause', function(){
+    if(video.ended){ frame.classList.remove('playing'); }
+  });
+  video.addEventListener('ended', function(){ frame.classList.remove('playing'); });
+});
+
+/* ---------- case file expanders ---------- */
+document.querySelectorAll('.file-toggle').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var art = btn.closest('.exhibit');
+    var open = art.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.childNodes[1].textContent = open ? ' Close the case file' : ' Read the case file';
+  });
+});
+
+/* ---------- product image views ---------- */
+document.querySelectorAll('.p-view').forEach(function(group){
+  var imgs = group.closest('.p-imgs').querySelectorAll('img');
+  group.querySelectorAll('button').forEach(function(b){
+    b.addEventListener('click', function(){
+      group.querySelectorAll('button').forEach(function(x){ x.classList.remove('on'); });
+      b.classList.add('on');
+      var idx = parseInt(b.getAttribute('data-view'), 10);
+      imgs.forEach(function(im, k){ im.classList.toggle('on', k === idx); });
+    });
+  });
+});
+
+/* ---------- notify / email capture (front-end; backend wiring is a later step) ---------- */
+var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+function escapeHTML(s){
+  var d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+function filedHTML(email, title){
+  return '<div class="filed" role="status">' +
+    '<div style="letter-spacing:.14em;font-weight:700;margin-bottom:6px">' + title + '</div>' +
+    '<div>ITEM: 1x LAUNCH NOTIFICATION</div>' +
+    '<div>&gt; <span class="femail">' + escapeHTML(email) + '</span></div>' +
+    '<div>STATUS: <span class="fstatus">FILED ✓</span></div>' +
+    '<span class="stamp">NOTED</span>' +
+    '<div style="margin-top:12px;color:#6E6A5C;font-size:11px;letter-spacing:.1em">WATCH YOUR INBOX AT LAUNCH · KEEP RECEIPT · NO RETURNS</div>' +
+  '</div>';
+}
+function wireForm(form, wrap, title){
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var input = form.querySelector('input[type=email]');
+    var val = (input.value || '').trim();
+    if(!emailRe.test(val)){
+      toast('That email doesn\u2019t look right — try once more.');
+      input.focus();
+      return;
+    }
+    var div = document.createElement('div');
+    div.innerHTML = filedHTML(val, title);
+    wrap.replaceWith(div);
+  });
+}
+document.querySelectorAll('.p-form').forEach(function(wrap){
+  var form = wrap.querySelector('form');
+  if(form){ wireForm(form, wrap, 'JESUS RECEIPTS — LAUNCH LIST'); }
+});
+(function(){
+  var wrap = document.getElementById('join-form-wrap');
+  var form = document.getElementById('email-form');
+  wireForm(form, wrap, 'JESUS RECEIPTS — WATCHLIST');
+  var wrapDiv = wrap.nextElementSibling;
+})();
+
+})();
+
+</script>
+</body>
+</html>
