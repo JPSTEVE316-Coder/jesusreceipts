@@ -130,6 +130,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(11,10,8,.92);backdrop-filt
 .brand{display:flex;align-items:center;color:var(--cream);flex:none}
 .brand:hover{text-decoration:none}
 .brand-lockup{display:inline-flex;flex-direction:column;align-items:flex-start;gap:4px;white-space:nowrap;font-family:'Archivo Black','Arial Black',Impact,sans-serif;font-size:22px;line-height:.82;letter-spacing:-.045em;color:var(--cream);text-transform:uppercase}
+#nav .brand .brand-lockup{font-size:34px}
 .brand-lockup .brand-line{display:block}
 .brand-lockup .receipt-word .final-s{color:var(--gold)}
 .brand-lockup .barcode{color:var(--gold);height:8px;width:100%;margin:2px 0 0;flex:none}
@@ -431,6 +432,7 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
   .nav-toggle{display:none!important}
   .nav-inner{height:auto;min-height:78px;padding:8px 0 0;flex-wrap:wrap}
   .brand-lockup{font-size:19px;gap:4px}
+  #nav .brand .brand-lockup{font-size:28px}
   .brand-lockup .barcode{width:100%;height:7px;margin:2px 0 0}
   .foot-brand .brand-lockup{font-size:32px;gap:6px}
   .foot-brand .brand-lockup .barcode{width:100%;height:10px;margin:2px 0 0}
@@ -811,27 +813,25 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
       <article class="product">
         <div class="p-imgs">
           <span class="p-chip">Preview · Drop 001</span>
-          <img class="on" src="assets/merch/receipts-tee-lifestyle.jpg" alt="Candlelit lifestyle composition featuring the near-black ITEMIZED hero tee with a large gold JESUS RECEIPTS wordmark integrated into the full receipt print">
-          <img src="assets/merch/receipts-tee-front.png" alt="ITEMIZED hero tee product shot: near-black tee with full front receipt print — JESUS RECEIPTS wordmark in candlelight gold above the itemized case file" loading="lazy">
+          <img class="on" src="assets/merch/receipts-tee-brand-front.png" alt="V3 street-bold JESUS RECEIPTS brand front screen-printed on the black tee: stacked cream JESUS and RECEIPT lettering, candlelight-gold final S, and gold barcode">
+          <img src="assets/merch/receipts-tee-exhibit-back.png" alt="Back of the black tee with the exhibits itemized receipt-style: six exhibits with dotted leaders, TOTAL: SIX RECEIPTS FILED, and a red VERIFIED stamp" loading="lazy">
           <div class="p-view" role="group" aria-label="Tee views">
-            <button type="button" class="on" data-view="0">Worn</button>
-            <button type="button" data-view="1">Flat</button>
+            <button type="button" class="on" data-view="0">Front</button>
+            <button type="button" data-view="1">Back</button>
           </div>
         </div>
         <div class="p-body">
           <div class="p-brand"><span class="brand-lockup" aria-label="Jesus Receipts"><span class="brand-line">JESUS</span><span class="brand-line receipt-word">RECEIPT<span class="final-s">S</span></span><span class="barcode" aria-hidden="true"></span></span></div>
-          <h3>"ITEMIZED" <em>Hero Tee</em></h3>
+          <h3>"JESUS RECEIPTS" <em>Tee</em></h3>
           <ul class="p-spec">
-            <li>Large gold <strong>JESUS RECEIPTS</strong> wordmark leads the front-chest design</li>
-            <li>Tall thermal-receipt case file runs beneath the brand</li>
-            <li>All six exhibits itemized with dotted leaders; gold <strong>TOTAL: SIX RECEIPTS FILED</strong></li>
-            <li>Barcode #884921-007856 · "THANK YOU — KEEP RECEIPT — NO RETURNS"</li>
-            <li>Near-black tee · off-white + gold soft-hand screen print</li>
+            <li>Front: unified V3 street-bold brand mark — white <strong>JESUS RECEIPT</strong>, gold final <strong>S</strong>, and gold barcode</li>
+            <li>Back: exhibits itemized receipt print with <strong>TOTAL: SIX RECEIPTS FILED</strong> and a red <strong>VERIFIED</strong> stamp</li>
+            <li>Near-black tee · off-white + gold + stamp-red soft-hand screen print</li>
           </ul>
           <div class="p-form" data-notify="notify-tee">
             <div class="flabel">Notify me at launch</div>
             <form class="nform" novalidate>
-              <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address for the ITEMIZED Hero Tee launch notification">
+              <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address for the JESUS RECEIPTS Tee launch notification">
               <button class="btn gold small" type="submit">Notify me</button>
             </form>
           </div>
@@ -841,8 +841,8 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
       <article class="product">
         <div class="p-imgs">
           <span class="p-chip">Preview · Drop 001</span>
-          <img class="on" src="assets/merch/receipts-cap-brand-front.png" alt="Near-black cap embroidered with the stacked street-bold JESUS RECEIPTS mark, cream lettering, a boldly-saved gold S, and a gold barcode">
-          <img src="assets/merch/receipts-cap-lifestyle.jpg" alt="Close lifestyle view of the near-black JESUS RECEIPTS cap" loading="lazy">
+          <img class="on" src="assets/merch/receipts-cap-brand-front.jpg" alt="Near-black cap embroidered with the stacked street-bold JESUS RECEIPTS mark, cream lettering, a boldly-saved gold S, and a gold barcode">
+          <img src="assets/merch/receipts-cap-brand-detail.jpg" alt="Close-up detail of the embroidered stacked street-bold JESUS RECEIPTS mark on the near-black cap: cream thread, gold final S, gold barcode" loading="lazy">
           <div class="p-view" role="group" aria-label="Cap views">
             <button type="button" class="on" data-view="0">Front</button>
             <button type="button" data-view="1">Detail</button>
@@ -900,7 +900,7 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
         <div class="p-imgs">
           <span class="p-chip">Preview · Drop 001</span>
           <img class="on" src="assets/merch/receipts-mug-brand-front.png" alt="Front view of the matte near-black MORNING EVIDENCE mug with the stacked street-bold JESUS RECEIPTS mark, boldly-saved gold S, and gold barcode">
-          <img src="assets/merch/receipts-mug-lifestyle.jpg" alt="Lifestyle view of the matte near-black MORNING EVIDENCE mug with all six exhibits itemized" loading="lazy">
+          <img src="assets/merch/receipts-mug-brand-scene.jpg" alt="Candlelit scene with the same matte near-black MORNING EVIDENCE mug carrying the stacked street-bold JESUS RECEIPTS glaze transfer" loading="lazy">
           <div class="p-view" role="group" aria-label="Mug views">
             <button type="button" class="on" data-view="0">Front</button>
             <button type="button" data-view="1">Scene</button>
