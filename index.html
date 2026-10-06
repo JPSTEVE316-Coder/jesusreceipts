@@ -15,6 +15,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
 <style>
+@font-face{
+  font-family:'Archivo Black';
+  src:url('assets/fonts/archivo-black.woff2') format('woff2');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
 /* ============================================================
    JESUS RECEIPTS — near-black + candlelight gold brand build
    ============================================================ */
@@ -122,7 +129,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(11,10,8,.92);backdrop-filt
 .nav-inner{display:flex;align-items:center;justify-content:space-between;min-height:86px;gap:16px}
 .brand{display:flex;align-items:center;color:var(--cream);flex:none}
 .brand:hover{text-decoration:none}
-.brand-lockup{display:inline-flex;flex-direction:column;align-items:flex-start;gap:4px;white-space:nowrap;font-family:var(--brand);font-size:22px;line-height:.82;letter-spacing:-.045em;color:var(--cream);text-transform:uppercase}
+.brand-lockup{display:inline-flex;flex-direction:column;align-items:flex-start;gap:4px;white-space:nowrap;font-family:'Archivo Black','Arial Black',Impact,sans-serif;font-size:22px;line-height:.82;letter-spacing:-.045em;color:var(--cream);text-transform:uppercase}
 .brand-lockup .brand-line{display:block}
 .brand-lockup .receipt-word .final-s{color:var(--gold)}
 .brand-lockup .barcode{color:var(--gold);height:8px;width:100%;margin:2px 0 0;flex:none}
@@ -383,7 +390,7 @@ header.hero::after{
 /* ---------- footer ---------- */
 footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;position:relative;z-index:1}
 .foot-grid{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;margin-bottom:36px}
-.foot-brand .brand-lockup{font-size:40px;gap:7px}
+.foot-brand .brand-lockup{font-family:'Archivo Black','Arial Black',Impact,sans-serif;font-size:40px;gap:7px}
 .foot-brand .brand-lockup .barcode{height:12px;width:100%;margin:2px 0 0}
 .foot-honest{font-family:var(--mono);font-size:13px;color:var(--mute);margin-top:10px;max-width:520px;line-height:1.7}
 .foot-tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;color:var(--gold);margin-top:14px;text-transform:uppercase}
