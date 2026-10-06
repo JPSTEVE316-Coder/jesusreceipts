@@ -121,6 +121,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(11,10,8,.92);backdrop-filt
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
 .brand{display:flex;align-items:center;color:var(--cream);flex:none}
 .brand:hover{text-decoration:none}
+.brand-jesus{font-family:var(--disp);font-size:26px;line-height:1;letter-spacing:.01em;color:var(--cream);margin-right:8px}
 .brand-logo{display:block;width:174px;height:auto;max-height:52px;object-fit:contain;object-position:left center}
 .nav-links{display:flex;align-items:center;gap:26px}
 .nav-links a{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase}
@@ -420,6 +421,7 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
   html{scroll-padding-top:130px}
   .nav-toggle{display:none!important}
   .nav-inner{height:auto;min-height:64px;padding:6px 0 0;flex-wrap:wrap}
+  .brand-jesus{font-size:24px;margin-right:7px}
   .brand-logo{width:156px;max-height:42px}
   .nav-links{flex-basis:100%;border-top:1px solid var(--line);margin-top:12px;padding:6px 0;gap:4px 22px;flex-wrap:wrap}
   .nav-links a{padding:10px 2px;font-size:12px}
@@ -445,6 +447,7 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
 <nav id="nav" aria-label="Primary">
   <div class="wrap nav-inner">
     <a class="brand" href="#top" aria-label="Jesus Receipts — home">
+      <span class="brand-jesus" aria-hidden="true">JESUS</span>
       <img class="brand-logo" src="assets/jesus-receipts-logo.png" alt="" width="347" height="93">
     </a>
     <div class="nav-links" id="navlinks">
