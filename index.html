@@ -13,7 +13,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230B0A08'/%3E%3Crect x='10' y='14' width='4' height='36' fill='%23F2A93B'/%3E%3Crect x='17' y='14' width='2' height='36' fill='%23F2A93B'/%3E%3Crect x='23' y='14' width='7' height='36' fill='%23F2A93B'/%3E%3Crect x='33' y='14' width='3' height='36' fill='%23F2A93B'/%3E%3Crect x='39' y='14' width='2' height='36' fill='%23F2A93B'/%3E%3Crect x='44' y='14' width='6' height='36' fill='%23F2A93B'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    JESUS RECEIPTS — near-black + candlelight gold brand build
@@ -37,6 +37,7 @@
   --body:#E7E2D3;
   --mono:'Space Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   --disp:'Anton','Arial Narrow',Impact,sans-serif;
+  --brand:'Archivo Black','Arial Black',Impact,sans-serif;
   --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -118,11 +119,13 @@ section{position:relative;z-index:1;padding:88px 0}
 
 /* ---------- nav ---------- */
 nav{position:sticky;top:0;z-index:100;background:rgba(11,10,8,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:2px solid var(--line)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;min-height:86px;gap:16px}
 .brand{display:flex;align-items:center;color:var(--cream);flex:none}
 .brand:hover{text-decoration:none}
-.brand-jesus{font-family:var(--disp);font-size:26px;line-height:1;letter-spacing:.01em;color:var(--cream);margin-right:8px}
-.brand-logo{display:block;width:174px;height:auto;max-height:52px;object-fit:contain;object-position:left center}
+.brand-lockup{display:inline-flex;flex-direction:column;align-items:flex-start;gap:4px;white-space:nowrap;font-family:var(--brand);font-size:22px;line-height:.82;letter-spacing:-.045em;color:var(--cream);text-transform:uppercase}
+.brand-lockup .brand-line{display:block}
+.brand-lockup .receipt-word .final-s{color:var(--gold)}
+.brand-lockup .barcode{color:var(--gold);height:8px;width:100%;margin:2px 0 0;flex:none}
 .nav-links{display:flex;align-items:center;gap:26px}
 .nav-links a{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase}
 .nav-links a:hover{color:var(--gold);text-decoration:none}
@@ -323,12 +326,11 @@ header.hero::after{
 }
 .p-body{padding:26px 26px 28px;display:flex;flex-direction:column;gap:14px;flex:1}
 .p-brand{
-  font-family:var(--disp);font-size:clamp(28px,3vw,38px);line-height:1;letter-spacing:.035em;
-  color:var(--cream);text-transform:uppercase;display:flex;align-items:center;gap:13px;
   padding-bottom:14px;border-bottom:2px solid var(--gold-deep);
+  display:flex;align-items:center;
 }
-.p-brand em{font-style:normal;color:var(--gold)}
-.p-brand .barcode{color:var(--gold);height:23px;width:70px;flex:none;margin-left:auto}
+.p-brand .brand-lockup{font-size:clamp(25px,2.5vw,32px);gap:5px;width:max-content}
+.p-brand .brand-lockup .barcode{height:9px;width:100%;margin:2px 0 0}
 .p-body h3{font-family:var(--disp);font-size:30px;color:var(--cream);letter-spacing:.02em;text-transform:uppercase;font-weight:400}
 .p-body h3 em{font-style:normal;color:var(--gold)}
 .p-spec{font-family:var(--mono);font-size:12.8px;line-height:1.75;color:var(--mute)}
@@ -381,8 +383,8 @@ header.hero::after{
 /* ---------- footer ---------- */
 footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;position:relative;z-index:1}
 .foot-grid{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;margin-bottom:36px}
-.foot-brand{font-family:var(--disp);font-size:40px;color:var(--cream);letter-spacing:.03em}
-.foot-brand em{font-style:normal;color:var(--gold)}
+.foot-brand .brand-lockup{font-size:40px;gap:7px}
+.foot-brand .brand-lockup .barcode{height:12px;width:100%;margin:2px 0 0}
 .foot-honest{font-family:var(--mono);font-size:13px;color:var(--mute);margin-top:10px;max-width:520px;line-height:1.7}
 .foot-tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;color:var(--gold);margin-top:14px;text-transform:uppercase}
 .foot-barcode{color:var(--gold);opacity:.85}
@@ -420,9 +422,11 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
   header.hero{padding:56px 0 52px}
   html{scroll-padding-top:130px}
   .nav-toggle{display:none!important}
-  .nav-inner{height:auto;min-height:64px;padding:6px 0 0;flex-wrap:wrap}
-  .brand-jesus{font-size:24px;margin-right:7px}
-  .brand-logo{width:156px;max-height:42px}
+  .nav-inner{height:auto;min-height:78px;padding:8px 0 0;flex-wrap:wrap}
+  .brand-lockup{font-size:19px;gap:4px}
+  .brand-lockup .barcode{width:100%;height:7px;margin:2px 0 0}
+  .foot-brand .brand-lockup{font-size:32px;gap:6px}
+  .foot-brand .brand-lockup .barcode{width:100%;height:10px;margin:2px 0 0}
   .nav-links{flex-basis:100%;border-top:1px solid var(--line);margin-top:12px;padding:6px 0;gap:4px 22px;flex-wrap:wrap}
   .nav-links a{padding:10px 2px;font-size:12px}
   .nav-links .btn{margin-left:auto;padding:9px 14px;font-size:12px;white-space:nowrap}
@@ -447,8 +451,7 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
 <nav id="nav" aria-label="Primary">
   <div class="wrap nav-inner">
     <a class="brand" href="#top" aria-label="Jesus Receipts — home">
-      <span class="brand-jesus" aria-hidden="true">JESUS</span>
-      <img class="brand-logo" src="assets/jesus-receipts-logo.png" alt="" width="347" height="93">
+      <span class="brand-lockup" aria-hidden="true"><span class="brand-line">JESUS</span><span class="brand-line receipt-word">RECEIPT<span class="final-s">S</span></span><span class="barcode"></span></span>
     </a>
     <div class="nav-links" id="navlinks">
       <a href="#evidence">THE EVIDENCE</a>
@@ -809,7 +812,7 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
           </div>
         </div>
         <div class="p-body">
-          <div class="p-brand">JESUS <em>RECEIPTS</em><span class="barcode" aria-hidden="true"></span></div>
+          <div class="p-brand"><span class="brand-lockup" aria-label="Jesus Receipts"><span class="brand-line">JESUS</span><span class="brand-line receipt-word">RECEIPT<span class="final-s">S</span></span><span class="barcode" aria-hidden="true"></span></span></div>
           <h3>"ITEMIZED" <em>Hero Tee</em></h3>
           <ul class="p-spec">
             <li>Large gold <strong>JESUS RECEIPTS</strong> wordmark leads the front-chest design</li>
@@ -831,21 +834,20 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
       <article class="product">
         <div class="p-imgs">
           <span class="p-chip">Preview · Drop 001</span>
-          <img class="on" src="assets/merch/receipts-cap-lifestyle.jpg" alt="Candlelit lifestyle composition featuring the near-black cap with arched JESUS RECEIPTS embroidery in candlelight-gold thread">
-          <img src="assets/merch/receipts-cap-front.png" alt="Signature cap product shot: large arched JESUS RECEIPTS embroidery follows the curve of the front panel, with smaller VERIFIED embroidery beneath" loading="lazy">
+          <img class="on" src="assets/merch/receipts-cap-street-bold-front.png" alt="Near-black cap embroidered with the stacked street-bold JESUS RECEIPTS mark, cream lettering, a boldly-saved gold S, and a gold barcode">
+          <img src="assets/merch/receipts-cap-lifestyle.jpg" alt="Close lifestyle view of the near-black JESUS RECEIPTS cap" loading="lazy">
           <div class="p-view" role="group" aria-label="Cap views">
-            <button type="button" class="on" data-view="0">Scene</button>
-            <button type="button" data-view="1">Front</button>
+            <button type="button" class="on" data-view="0">Front</button>
+            <button type="button" data-view="1">Detail</button>
           </div>
         </div>
         <div class="p-body">
-          <div class="p-brand">JESUS <em>RECEIPTS</em><span class="barcode" aria-hidden="true"></span></div>
+          <div class="p-brand"><span class="brand-lockup" aria-label="Jesus Receipts"><span class="brand-line">JESUS</span><span class="brand-line receipt-word">RECEIPT<span class="final-s">S</span></span><span class="barcode" aria-hidden="true"></span></span></div>
           <h3>Signature <em>Cap</em></h3>
           <ul class="p-spec">
-            <li>Front-and-center gold <strong>JESUS RECEIPTS</strong> embroidery</li>
+            <li>Unified front mark: white <strong>JESUS RECEIPT</strong>, gold final <strong>S</strong>, and gold barcode</li>
             <li>The brand name leads — clear enough to start the conversation from across the room</li>
-            <li>Small gold <strong>VERIFIED</strong> stamp over the back strap</li>
-            <li>Near-black unstructured six-panel · candlelight-gold thread</li>
+            <li>Near-black unstructured six-panel · white + candlelight-gold thread</li>
           </ul>
           <div class="p-form" data-notify="notify-cap">
             <div class="flabel">Notify me at launch</div>
@@ -860,21 +862,21 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
       <article class="product">
         <div class="p-imgs">
           <span class="p-chip">Preview · Drop 001</span>
-          <img class="on" src="assets/merch/receipts-hoodie-lifestyle.jpg" alt="Candlelit lifestyle composition featuring the near-black CASE FILED hoodie with an oversized gold JESUS RECEIPTS wordmark above the back case file">
-          <img src="assets/merch/receipts-hoodie-back.png" alt="CASE FILED hoodie back product shot: oversized gold JESUS RECEIPTS wordmark above the itemized case file inside a double-rule frame" loading="lazy">
+          <img class="on" src="assets/merch/receipts-hoodie-street-bold-front.png" alt="Front-and-back view of the near-black CASE FILED hoodie, with the stacked street-bold JESUS RECEIPTS mark, boldly-saved gold S, and gold barcode on the front">
+          <img src="assets/merch/receipts-hoodie-back.png" alt="CASE FILED hoodie back product shot with all six exhibits itemized and a red VERIFIED stamp" loading="lazy">
           <div class="p-view" role="group" aria-label="Hoodie views">
-            <button type="button" class="on" data-view="0">Scene</button>
-            <button type="button" data-view="1">Back</button>
+            <button type="button" class="on" data-view="0">Front + Back</button>
+            <button type="button" data-view="1">Back Detail</button>
           </div>
         </div>
         <div class="p-body">
-          <div class="p-brand">JESUS <em>RECEIPTS</em><span class="barcode" aria-hidden="true"></span></div>
+          <div class="p-brand"><span class="brand-lockup" aria-label="Jesus Receipts"><span class="brand-line">JESUS</span><span class="brand-line receipt-word">RECEIPT<span class="final-s">S</span></span><span class="barcode" aria-hidden="true"></span></span></div>
           <h3>"CASE FILED" <em>Hoodie</em></h3>
           <ul class="p-spec">
             <li>Oversized gold <strong>JESUS RECEIPTS</strong> brand across the back</li>
             <li>Declassified case file beneath it — all six exhibits itemized</li>
             <li>Gold <strong>TOTAL: SIX RECEIPTS FILED</strong> · tilted <strong>red VERIFIED stamp</strong></li>
-            <li>Front: gold <strong>JESUS RECEIPTS</strong> wordmark at left chest</li>
+            <li>Front chest: unified white <strong>JESUS RECEIPT</strong>, gold final <strong>S</strong>, and gold barcode mark</li>
             <li>Near-black heavyweight pullover · off-white + gold + stamp-red print</li>
           </ul>
           <div class="p-form" data-notify="notify-hoodie">
@@ -890,20 +892,20 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
       <article class="product">
         <div class="p-imgs">
           <span class="p-chip">Preview · Drop 001</span>
-          <img class="on" src="assets/merch/receipts-mug-lifestyle.jpg" alt="Candlelit lifestyle composition featuring the matte near-black MORNING EVIDENCE mug with a large gold JESUS RECEIPTS wordmark sublimated into the wrap">
-          <img src="assets/merch/receipts-mug-flat.png" alt="MORNING EVIDENCE mug product shot: matte near-black ceramic with large gold JESUS RECEIPTS wordmark and exhibit list integrated into the wrap" loading="lazy">
+          <img class="on" src="assets/merch/receipts-mug-street-bold-front.png" alt="Front view of the matte near-black MORNING EVIDENCE mug with the stacked street-bold JESUS RECEIPTS mark, boldly-saved gold S, and gold barcode">
+          <img src="assets/merch/receipts-mug-lifestyle.jpg" alt="Lifestyle view of the matte near-black MORNING EVIDENCE mug with all six exhibits itemized" loading="lazy">
           <div class="p-view" role="group" aria-label="Mug views">
-            <button type="button" class="on" data-view="0">Scene</button>
-            <button type="button" data-view="1">Flat</button>
+            <button type="button" class="on" data-view="0">Front</button>
+            <button type="button" data-view="1">Scene</button>
           </div>
         </div>
         <div class="p-body">
-          <div class="p-brand">JESUS <em>RECEIPTS</em><span class="barcode" aria-hidden="true"></span></div>
+          <div class="p-brand"><span class="brand-lockup" aria-label="Jesus Receipts"><span class="brand-line">JESUS</span><span class="brand-line receipt-word">RECEIPT<span class="final-s">S</span></span><span class="barcode" aria-hidden="true"></span></span></div>
           <h3>"MORNING EVIDENCE" <em>Mug</em></h3>
           <ul class="p-spec">
+            <li>Front: unified white <strong>JESUS RECEIPT</strong>, gold final <strong>S</strong>, and gold barcode mark</li>
             <li><strong>Wrap-around receipt graphic</strong> — six exhibits itemized</li>
             <li>Gold <strong>TOTAL: SIX RECEIPTS FILED</strong> · barcode · "THANK YOU — KEEP RECEIPT"</li>
-            <li>Gold <strong>JESUS RECEIPTS</strong> wordmark near the handle</li>
             <li>Matte near-black ceramic · full-wrap sublimation · off-white + gold</li>
           </ul>
           <div class="p-form" data-notify="notify-mug">
@@ -961,7 +963,7 @@ footer{border-top:2px solid var(--line);background:#080705;padding:56px 0 32px;p
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="foot-brand">JESUS <em>RECEIPTS</em></div>
+        <div class="foot-brand"><span class="brand-lockup" aria-label="Jesus Receipts"><span class="brand-line">JESUS</span><span class="brand-line receipt-word">RECEIPT<span class="final-s">S</span></span><span class="barcode" aria-hidden="true"></span></span></div>
         <div class="foot-honest">"This doesn't prove the resurrection happened. It provides a receipt."</div>
         <div class="foot-tag">WE GOT RECEIPTS. — KEEP RECEIPT · NO RETURNS</div>
       </div>
